@@ -24,8 +24,8 @@ int main() {
     cout << "main thread id" << std::this_thread::get_id() << endl;
 
     int i = 10;
-    thread t1(thread_func, i);
-    t1.join();
+    // thread t1(thread_func, i);
+    // t1.join();
     // t1.detach() // 隐式转换发生在子线程中，无法保证主线程初始资源有效
 
     cout << " -------------------------------\n";

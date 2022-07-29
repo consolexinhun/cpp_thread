@@ -5,28 +5,42 @@
 
 using std::cout;
 using std::endl;
+using std::queue;
 using std::thread;
 using std::vector;
 
 class Handle {
 public:
-    void inMsgQueue() {}
+    void inMsgQueue() {
+        for (int i = 0; i < 10000; i++) {
+            cout << "inMsgQueue():" << i << endl;
+            m_queue.push(i);
+        }
+    }
+
+    void outMsgQueue() {
+        for (int i = 0; i < 10000; i += 1) {
+            if (!m_queue.empty()) {
+                cout << "outMsgQueue():" << m_queue.front() << endl;
+                m_queue.pop();
+            }
+        }
+    }
+
+private:
+    queue<int> m_queue;
 };
-
-vector<int> g{1, 2, 3};
-
-void thread_fun() {
-    cout << "thread fun id: " << std::this_thread::get_id() << " | " << g[0] << " " << g[1] << " " << g[2] << endl;
-}
 
 int main() {
     cout << "main begin" << endl;
 
-    thread t1(thread_fun);
-    thread t2(thread_fun);
+    Handle handle;
 
-    t1.join();
+    thread t1(&Handle::inMsgQueue, std::ref(handle));
+    thread t2(&Handle::outMsgQueue, std::ref(handle));
+
     t2.join();
+    t1.join();
 
     cout << "main end" << endl;
     return 0;
