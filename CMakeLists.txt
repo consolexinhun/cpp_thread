@@ -72,3 +72,6 @@ target_link_libraries(lock_many pthread)
 
 add_executable(adopt_lock ${ROOT}/05/adopt_lock.cpp)
 target_link_libraries(adopt_lock pthread)
+
+add_executable(unique_lock ${ROOT}/06/unique_lock.cpp)
+target_link_libraries(unique_lock pthread)
