@@ -62,3 +62,6 @@ target_link_libraries(lock pthread)
 
 add_executable(deadlock ${ROOT}/05/deadlock.cpp)
 target_link_libraries(deadlock pthread)
+
+add_executable(avoid_deadlock ${ROOT}/05/avoid_deadlock.cpp)
+target_link_libraries(avoid_deadlock pthread)
