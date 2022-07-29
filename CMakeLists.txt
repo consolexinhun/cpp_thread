@@ -48,3 +48,9 @@ target_link_libraries(param_by_pointer pthread)
 add_executable(param_by_implicit ${ROOT}/03/param_by_implicit.cpp)
 target_link_libraries(param_by_implicit pthread)
 
+add_executable(multi_thread ${ROOT}/04/multi_thread.cpp)
+target_link_libraries(multi_thread pthread)
+
+add_executable(multi_thread_read ${ROOT}/04/multi_thread_read.cpp)
+target_link_libraries(multi_thread_read pthread)
+
