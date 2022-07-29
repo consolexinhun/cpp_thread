@@ -1,11 +1,17 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+#include <queue>
 
 using std::cout;
 using std::endl;
-using std::vector;
 using std::thread;
+using std::vector;
+
+class Handle {
+public:
+    void inMsgQueue() {}
+};
 
 vector<int> g{1, 2, 3};
 

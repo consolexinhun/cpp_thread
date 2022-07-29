@@ -54,3 +54,5 @@ target_link_libraries(multi_thread pthread)
 add_executable(multi_thread_read ${ROOT}/04/multi_thread_read.cpp)
 target_link_libraries(multi_thread_read pthread)
 
+add_executable(multi_thread_write ${ROOT}/04/multi_thread_write.cpp)
+target_link_libraries(multi_thread_write pthread)
