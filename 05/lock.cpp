@@ -2,6 +2,7 @@
 #include <thread>
 #include <vector>
 #include <queue>
+#include <mutex>
 
 using std::cout;
 using std::endl;
@@ -13,13 +14,18 @@ class Handle {
 public:
     void inMsgQueue() {
         for (int i = 0; i < 100000; i++) {
+            m_mutex.lock();
+
             cout << "inMsgQueue():" << i << endl;
             m_queue.push(i);
+
+            m_mutex.unlock();
         }
     }
 
     void outMsgQueue() {
         for (int i = 0; i < 100000; i += 1) {
+            std::lock_guard<std::mutex> lck(m_mutex);
             if (!m_queue.empty()) {
                 cout << "outMsgQueue():" << m_queue.front() << endl;
                 m_queue.pop();
@@ -29,6 +35,7 @@ public:
 
 private:
     queue<int> m_queue;
+    std::mutex m_mutex;
 };
 
 int main() {
