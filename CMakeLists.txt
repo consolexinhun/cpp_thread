@@ -34,4 +34,10 @@ target_link_libraries(create pthread)
 
 add_executable(get_id ${ROOT}/03/get_id.cpp)
 target_link_libraries(get_id pthread)
+
+add_executable(param_by_reference ${ROOT}/03/param_by_reference.cpp)
+target_link_libraries(param_by_reference pthread)
 # add_executable(test2 ${ROOT}/test2.cpp)
+
+add_executable(param_by_reference_class ${ROOT}/03/param_by_reference_class.cpp)
+target_link_libraries(param_by_reference_class pthread)
