@@ -59,3 +59,6 @@ target_link_libraries(multi_thread_write pthread)
 
 add_executable(lock ${ROOT}/05/lock.cpp)
 target_link_libraries(lock pthread)
+
+add_executable(deadlock ${ROOT}/05/deadlock.cpp)
+target_link_libraries(deadlock pthread)
