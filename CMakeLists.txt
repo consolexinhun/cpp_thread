@@ -28,4 +28,7 @@ target_link_libraries(thread pthread)
 add_executable(detach ${ROOT}/01/detach.cpp)
 target_link_libraries(detach pthread)
 
+add_executable(create ${ROOT}/01/create.cpp)
+target_link_libraries(create pthread)
+
 # add_executable(test2 ${ROOT}/test2.cpp)
