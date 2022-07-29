@@ -22,13 +22,16 @@ add_compile_options(-O3 -fPIC)
 # add_library(basics SHARED ${ROOT}/src/to_py/basics.cpp)
 # target_link_libraries(basics awm pybind11::module )
 
-add_executable(thread ${ROOT}/01/thread.cpp)
+add_executable(thread ${ROOT}/02/thread.cpp)
 target_link_libraries(thread pthread)
 
-add_executable(detach ${ROOT}/01/detach.cpp)
+add_executable(detach ${ROOT}/02/detach.cpp)
 target_link_libraries(detach pthread)
 
-add_executable(create ${ROOT}/01/create.cpp)
+add_executable(create ${ROOT}/02/create.cpp)
 target_link_libraries(create pthread)
 
+
+add_executable(get_id ${ROOT}/03/get_id.cpp)
+target_link_libraries(get_id pthread)
 # add_executable(test2 ${ROOT}/test2.cpp)
