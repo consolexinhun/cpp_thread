@@ -1,23 +1,26 @@
 #include <iostream>
 #include <thread>
 
-using namespace std;
+using std::cout;
+using std::endl;
+using std::thread;
 
 void thread_func() {
-    cout<< "thread func begin" <<endl;
-    for(int i = 0; i < 10000; i++) {}
-    cout<< "thread func end" << endl;
+    cout << "thread func begin" << endl;
+    for (int i = 0; i < 10000; i++) {
+    }
+    cout << "thread func end" << endl;
 }
 
 int main() {
-    cout<< "main begin" <<endl;
+    cout << "main begin" << endl;
 
     thread mythread(thread_func);
-    if(mythread.joinable()) {
-        cout<< "mythread is joinable() : " << mythread.joinable() <<endl;
+    if (mythread.joinable()) {
+        cout << "mythread is joinable() : " << mythread.joinable() << endl;
         mythread.detach();
     }
 
-    cout<< "mythread is joinable() : " << mythread.joinable() <<endl;
-    cout<< "main end" <<endl;
+    cout << "mythread is joinable() : " << mythread.joinable() << endl;
+    cout << "main end" << endl;
 }
