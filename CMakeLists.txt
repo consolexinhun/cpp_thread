@@ -104,3 +104,6 @@ target_link_libraries(eager_singleton pthread)
 add_executable(lazy_singleton_callonce ${ROOT}/07/lazy_singleton_callonce.cpp)
 target_link_libraries(lazy_singleton_callonce pthread)
 
+add_executable(recycle ${ROOT}/07/recycle.cpp)
+target_link_libraries(recycle pthread)
+
