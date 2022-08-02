@@ -78,3 +78,6 @@ target_link_libraries(unique_lock pthread)
 
 add_executable(owns_lock ${ROOT}/06/owns_lock.cpp)
 target_link_libraries(owns_lock pthread)
+
+add_executable(unlock ${ROOT}/06/unlock.cpp)
+target_link_libraries(unlock pthread)
