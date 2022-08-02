@@ -118,3 +118,6 @@ target_link_libraries(notify_all pthread)
 
 add_executable(wait ${ROOT}/08/wait.cpp)
 target_link_libraries(wait pthread)
+
+add_executable(wait_for ${ROOT}/08/wait_for.cpp)
+target_link_libraries(wait_for pthread)
