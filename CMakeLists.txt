@@ -107,3 +107,5 @@ target_link_libraries(lazy_singleton_callonce pthread)
 add_executable(recycle ${ROOT}/07/recycle.cpp)
 target_link_libraries(recycle pthread)
 
+add_executable(condition_variable ${ROOT}/08/condition_variable.cpp)
+target_link_libraries(condition_variable pthread)
