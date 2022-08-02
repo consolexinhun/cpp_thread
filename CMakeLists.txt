@@ -109,3 +109,6 @@ target_link_libraries(recycle pthread)
 
 add_executable(condition_variable ${ROOT}/08/condition_variable.cpp)
 target_link_libraries(condition_variable pthread)
+
+add_executable(notify_one ${ROOT}/08/notify_one.cpp)
+target_link_libraries(notify_one pthread)
