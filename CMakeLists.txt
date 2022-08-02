@@ -93,3 +93,7 @@ target_link_libraries(unique_lock_mutex pthread)
 
 add_executable(operate ${ROOT}/06/operate.cpp)
 target_link_libraries(operate pthread)
+
+
+add_executable(lazy_singleton ${ROOT}/07/lazy_singleton.cpp)
+target_link_libraries(lazy_singleton pthread)
