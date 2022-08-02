@@ -16,9 +16,9 @@ void print_fifty() {
     lck = std::unique_lock<mutex>(mtx);
     for (int i = 0; i < 50; i++) {
         if (lck.owns_lock()) {
-            cout<< '*';
+            cout << '*';
         } else {
-            cout<< '#';
+            cout << '#';
         }
     }
     cout << endl;
