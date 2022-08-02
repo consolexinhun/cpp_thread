@@ -87,3 +87,6 @@ target_link_libraries(trylock pthread)
 
 add_executable(release ${ROOT}/06/release.cpp)
 target_link_libraries(release pthread)
+
+add_executable(unique_lock_mutex ${ROOT}/06/unique_lock_mutex.cpp)
+target_link_libraries(unique_lock_mutex pthread)
