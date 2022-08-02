@@ -112,3 +112,9 @@ target_link_libraries(condition_variable pthread)
 
 add_executable(notify_one ${ROOT}/08/notify_one.cpp)
 target_link_libraries(notify_one pthread)
+
+add_executable(notify_all ${ROOT}/08/notify_all.cpp)
+target_link_libraries(notify_all pthread)
+
+add_executable(wait ${ROOT}/08/wait.cpp)
+target_link_libraries(wait pthread)
