@@ -100,3 +100,7 @@ target_link_libraries(lazy_singleton pthread)
 
 add_executable(eager_singleton ${ROOT}/07/eager_singleton.cpp)
 target_link_libraries(eager_singleton pthread)
+
+add_executable(lazy_singleton_callonce ${ROOT}/07/lazy_singleton_callonce.cpp)
+target_link_libraries(lazy_singleton_callonce pthread)
+
