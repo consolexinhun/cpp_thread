@@ -148,3 +148,6 @@ target_link_libraries(async3 pthread)
 
 add_executable(packaged_task ${ROOT}/09/packaged_task.cpp)
 target_link_libraries(packaged_task pthread)
+
+add_executable(promise ${ROOT}/09/promise.cpp)
+target_link_libraries(promise pthread)
