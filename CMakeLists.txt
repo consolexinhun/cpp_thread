@@ -145,3 +145,6 @@ target_link_libraries(async2 pthread)
 
 add_executable(async3 ${ROOT}/09/async3.cpp)
 target_link_libraries(async3 pthread)
+
+add_executable(packaged_task ${ROOT}/09/packaged_task.cpp)
+target_link_libraries(packaged_task pthread)
