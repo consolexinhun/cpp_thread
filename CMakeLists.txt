@@ -124,3 +124,9 @@ target_link_libraries(wait_for pthread)
 
 add_executable(wait_util ${ROOT}/08/wait_util.cpp)
 target_link_libraries(wait_util pthread)
+
+add_executable(future_valid ${ROOT}/09/future_valid.cpp)
+target_link_libraries(future_valid pthread)
+
+add_executable(future_get ${ROOT}/09/future_get.cpp)
+target_link_libraries(future_get pthread)

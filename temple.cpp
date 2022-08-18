@@ -8,3 +8,8 @@ using std::endl;
 using std::mutex;
 using std::thread;
 using std::vector;
+
+int main() {
+    
+    return 0;
+}
