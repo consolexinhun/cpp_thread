@@ -130,3 +130,6 @@ target_link_libraries(future_valid pthread)
 
 add_executable(future_get ${ROOT}/09/future_get.cpp)
 target_link_libraries(future_get pthread)
+
+add_executable(future_wait ${ROOT}/09/future_wait.cpp)
+target_link_libraries(future_wait pthread)
