@@ -136,3 +136,12 @@ target_link_libraries(future_wait pthread)
 
 add_executable(future_wait_for ${ROOT}/09/future_wait_for.cpp)
 target_link_libraries(future_wait_for pthread)
+
+add_executable(async1 ${ROOT}/09/async1.cpp)
+target_link_libraries(async1 pthread)
+
+add_executable(async2 ${ROOT}/09/async2.cpp)
+target_link_libraries(async2 pthread)
+
+add_executable(async3 ${ROOT}/09/async3.cpp)
+target_link_libraries(async3 pthread)
