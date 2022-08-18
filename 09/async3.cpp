@@ -14,7 +14,7 @@ using std::thread;
 using std::vector;
 
 bool async_func() {
-    cout << "async_func begin " << std::this_thread::get_id() << endl;;
+    cout << "async_func begin " << std::this_thread::get_id() << endl;
 
     cout << "async_func end\n"; 
     return true;
