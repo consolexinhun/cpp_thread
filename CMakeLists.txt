@@ -163,3 +163,6 @@ target_link_libraries(atomic2 pthread)
 
 add_executable(atomic3 ${ROOT}/10/atomic3.cpp)
 target_link_libraries(atomic3 pthread)
+
+add_executable(atomic_flag ${ROOT}/10/atomic_flag.cpp)
+target_link_libraries(atomic_flag pthread)
