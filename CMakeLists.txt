@@ -151,3 +151,6 @@ target_link_libraries(packaged_task pthread)
 
 add_executable(promise ${ROOT}/09/promise.cpp)
 target_link_libraries(promise pthread)
+
+add_executable(share_future ${ROOT}/10/share_future.cpp)
+target_link_libraries(share_future pthread)

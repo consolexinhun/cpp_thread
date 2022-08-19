@@ -20,6 +20,4 @@ C++ 并发与多线程
 
 11 atomic launch
 
-12 recursize_mutex timed_mutex recursive_timed_mutex
-
 13 线程池
