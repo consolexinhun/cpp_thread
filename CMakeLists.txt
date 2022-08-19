@@ -154,3 +154,12 @@ target_link_libraries(promise pthread)
 
 add_executable(share_future ${ROOT}/10/share_future.cpp)
 target_link_libraries(share_future pthread)
+
+add_executable(atomic1 ${ROOT}/10/atomic1.cpp)
+target_link_libraries(atomic1 pthread)
+
+add_executable(atomic2 ${ROOT}/10/atomic2.cpp)
+target_link_libraries(atomic2 pthread)
+
+add_executable(atomic3 ${ROOT}/10/atomic3.cpp)
+target_link_libraries(atomic3 pthread)
