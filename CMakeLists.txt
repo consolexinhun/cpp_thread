@@ -166,3 +166,11 @@ target_link_libraries(atomic3 pthread)
 
 add_executable(atomic_flag ${ROOT}/10/atomic_flag.cpp)
 target_link_libraries(atomic_flag pthread)
+
+add_executable(launch_async ${ROOT}/11/launch_async.cpp)
+target_link_libraries(launch_async pthread)
+
+
+add_executable(launch_deferred ${ROOT}/11/launch_deferred.cpp)
+target_link_libraries(launch_deferred pthread)
+
