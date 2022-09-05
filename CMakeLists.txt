@@ -3,7 +3,8 @@ project(thread)
 
 set(ROOT ${PROJECT_SOURCE_DIR})
 
-add_compile_options(-O3 -fPIC -g)
+# add_compile_options(-O3 -fPIC -g)  # 调试时不要开启优化
+add_compile_options(-fPIC -g)
 
 MACRO(SUBDIRLIST result curdir)
   FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)

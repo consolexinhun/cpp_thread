@@ -20,13 +20,13 @@ int g_num = 0;
 
 void add() {
     for (int i = 0; i < N; i++) {
-        g_num++;
+        g_num = g_num + 1;
     }
 }
 
 void sub() {
     for (int i = 0; i < N; i++) {
-        g_num--;
+        g_num = g_num - 1;
     }
 }
 
